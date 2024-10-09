@@ -1,0 +1,15 @@
+echo { > vercel.json
+echo   "version": 2, >> vercel.json
+echo   "builds": [ >> vercel.json
+echo     { >> vercel.json
+echo       "src": "package.json", >> vercel.json
+echo       "use": "@vercel/next" >> vercel.json
+echo     } >> vercel.json
+echo   ], >> vercel.json
+echo   "routes": [ >> vercel.json
+echo     { >> vercel.json
+echo       "src": "/(.*)", >> vercel.json
+echo       "dest": "/" >> vercel.json
+echo     } >> vercel.json
+echo   ] >> vercel.json
+echo } >> vercel.json
