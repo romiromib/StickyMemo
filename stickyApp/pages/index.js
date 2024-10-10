@@ -179,7 +179,10 @@ export default function Home() {
         <h1>StickyMemo App ㅁㅌㅁㅇ</h1>
         <SearchBar onSearch={setSearchTerm} />
         <div className="sort-controls">
-          <select value={sortType} onChange={(e) => setSortType(e.target.value)}>
+          <select   id="sort-select"
+            name="sort"
+            value={sortType} 
+            onChange={(e) => setSortType(e.target.value)}>
             <option value="order">사용자 지정</option>
             <option value="createdAt">생성일</option>
             <option value="alphabetical">알파벳순</option>
