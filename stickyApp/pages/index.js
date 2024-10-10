@@ -188,13 +188,13 @@ export default function Home() {
             <option value="alphabetical">알파벳순</option>
             <option value="tags">태그 수</option>
           </select>
-          <button onClick={() => setSortDirection(prev => prev === 'asc' ? 'desc' : 'asc')}>
+          <button id="sort-order-btn" name="sort-order" onClick={() => setSortDirection(prev => prev === 'asc' ? 'desc' : 'asc')}>
             {sortDirection === 'asc' ? '오름차순' : '내림차순'}
           </button>
         </div>
         <div className="app-layout">
           <div className="board-list-container">
-            <button onClick={() => addBoard(prompt('보드 이름을 입력하세요:'))}>
+            <button id="add-board-btn" name="add-board" onClick={() => addBoard(prompt('보드 이름을 입력하세요:'))}>
               새 보드 추가
             </button>
             <BoardList 
