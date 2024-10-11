@@ -176,7 +176,7 @@ export default function Home() {
   return (
     <DragDropContext onDragEnd={onDragEnd}>
       <div className="container">
-        <h1>StickyMemo App ㅁㅌㅁㅇ</h1>
+        <h1>StickyMemo App [Memoard]</h1>
         <SearchBar onSearch={setSearchTerm} />
         <div className="sort-controls">
           <select   id="sort-select"
